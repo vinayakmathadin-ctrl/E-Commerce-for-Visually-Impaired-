@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files\microsoft visual studio\2022\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="17.0">
+ <Targets>
+  <Target Name="C:\WINDOWS\TEMP\tmp3F5.tmp.cadir\bin\App_Web_2skt5rbc.dll">
+   <Modules>
+    <Module Name="app_web_2skt5rbc.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="AddCategory" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GridView1_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2025-05-09 05:18:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="AddCategory.aspx.cs" Line="72">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'AddCategory.GridView1_RowCommand(object, GridViewCommandEventArgs)' could contain the following variables 'Convert.ToString(e.CommandArgument.ToString())'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="AddProduct" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ButtonSubmit_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2025-05-09 05:18:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="AddProduct.aspx.cs" Line="65">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'AddProduct.ButtonSubmit_Click(object, EventArgs)' could contain the following variables 'this.TextBoxPid.Text', 'this.TextBoxName.Text', 'this.TextBoxCost.Text', 'this.DropDownListCategory.Text', 'this.DropDownListSubCategory.Text', 'this.TextBoxDesc.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DropDownListCategory_SelectedIndexChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2025-05-09 05:18:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="AddProduct.aspx.cs" Line="104">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'AddProduct.DropDownListCategory_SelectedIndexChanged(object, EventArgs)' could contain the following variables 'this.DropDownListCategory.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="AdminLogin" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2025-05-09 05:18:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="AdminLogin.aspx.cs" Line="31">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'AdminLogin.Button1_Click(object, EventArgs)' could contain the following variables 'this.TextBox6.Text', 'this.TextBox7.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="EnterPaymentDetails" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ButtonPay_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2025-05-09 05:18:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="EnterPaymentDetails.aspx.cs" Line="72">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'EnterPaymentDetails.ButtonPay_Click(object, EventArgs)' could contain the following variables 'this.Session["uid"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="EnterPaymentDetails.aspx.cs" Line="65">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'EnterPaymentDetails.ButtonPay_Click(object, EventArgs)' could contain the following variables 'this.Session["uid"]', 'this.id', 'this.txtCardNo.Text', 'this.txtCVV.Text', 'this.txtbankName.Text', 'this.txtBranch.Text', 'ds1.Tables[0].Rows[i][1]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="EnterPaymentDetails.aspx.cs" Line="88">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'EnterPaymentDetails.ButtonPay_Click(object, EventArgs)' could contain the following variables 'this.Session["uid"]', 'this.pid', 'this.txtCardNo.Text', 'this.txtCVV.Text', 'this.txtbankName.Text', 'this.txtBranch.Text', 'ds.Tables[0].Rows[0][0]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="EnterPaymentDetails.aspx.cs" Line="44">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'EnterPaymentDetails.ButtonPay_Click(object, EventArgs)' could contain the following variables 'this.Session["uid"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="EnterPaymentDetails.aspx.cs" Line="82">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'EnterPaymentDetails.ButtonPay_Click(object, EventArgs)' could contain the following variables 'this.pid'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ForgotPassword" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ButtonLogin_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2025-05-09 05:18:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="ForgotPassword.aspx.cs" Line="41">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'ForgotPassword.ButtonLogin_Click(object, EventArgs)' could contain the following variables 'this.userid.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#submit_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2025-05-09 05:18:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="ForgotPassword.aspx.cs" Line="77">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'ForgotPassword.submit_Click(object, EventArgs)' could contain the following variables 'this.TextBox1.Text', 'this.userid.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ManageProduct" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GridView1_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2025-05-09 05:18:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="ManageProduct.aspx.cs" Line="55">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'ManageProduct.GridView1_RowCommand(object, GridViewCommandEventArgs)' could contain the following variables 'Convert.ToString(e.CommandArgument.ToString())'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Payment_Done" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2025-05-09 05:18:32Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="Payment_Done.aspx.cs" Line="105">Object 'con' can be disposed more than once in method 'Payment_Done.Page_Load(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 105</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2025-05-09 05:18:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="Payment_Done.aspx.cs" Line="102">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Payment_Done.Page_Load(object, EventArgs)' could contain the following variables 'oid', 'ds.Tables[0].Rows[0][1]', 'ds.Tables[0].Rows[0][2]', 'this.Request.QueryString["uid"]', 'new string[13][9]', 'new string[13][11]', 'ds.Tables[0].Rows[i][1]', 'ds.Tables[0].Rows[i][3]', 'total_cost', 'DateTime.Now.ToString("yyyy/MM/dd")', 'DateTime.Now.ToString("HH:mm")'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="Payment_Done.aspx.cs" Line="151">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Payment_Done.Page_Load(object, EventArgs)' could contain the following variables 'this.Request.QueryString["Pid"]', 'ds.Tables[0].Rows[0][1]', 'ds.Tables[0].Rows[0][2]', 'this.Request.QueryString["uid"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="Payment_Done.aspx.cs" Line="82">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Payment_Done.Page_Load(object, EventArgs)' could contain the following variables 'this.Request.QueryString["uid"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="Payment_Done.aspx.cs" Line="125">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Payment_Done.Page_Load(object, EventArgs)' could contain the following variables 'this.Request.QueryString["uid"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="Payment_Done.aspx.cs" Line="114">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Payment_Done.Page_Load(object, EventArgs)' could contain the following variables 'this.Request.QueryString["uid"]', 'this.Request.QueryString["Pid"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="Payment_Done.aspx.cs" Line="91">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'Payment_Done.Page_Load(object, EventArgs)' could contain the following variables 'this.Request.QueryString["Pid"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="Payment_Done.aspx.cs" Line="142">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'Payment_Done.Page_Load(object, EventArgs)' could contain the following variables 'this.Request.QueryString["Pid"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="Payment_Done.aspx.cs" Line="56">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'Payment_Done.Page_Load(object, EventArgs)' could contain the following variables 'this.Request.QueryString["uid"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Recommendation" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2025-05-09 05:18:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="Recommendation.aspx.cs" Line="49">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'Recommendation.Page_Load(object, EventArgs)' could contain the following variables 'ds.Tables[0].Rows[j][1]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="Recommendation.aspx.cs" Line="123">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'Recommendation.Page_Load(object, EventArgs)' could contain the following variables 'recommname[m]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Registration" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ButtonSubmit_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2025-05-09 05:18:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="Registration.aspx.cs" Line="52">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Registration.ButtonSubmit_Click(object, EventArgs)' could contain the following variables 'this.uid.Text', 'this.TextBox2.Text', 'this.TextBox3.Text', 'this.TextBox4.Text', 'this.TextBox5.Text', 'this.TextBox6.Text', 'this.TextBox7.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UserLogin" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ButtonLogin_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2025-05-09 05:18:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="UserLogin.aspx.cs" Line="73">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'UserLogin.ButtonLogin_Click(object, EventArgs)' could contain the following variables 'this.TextBoxUsername.Text', 'this.TextBoxPass.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ViewProduct" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2025-05-09 05:18:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="ViewProduct.aspx.cs" Line="37">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'ViewProduct.Page_Load(object, EventArgs)' could contain the following variables 'this.LabelCategory.Text', 'this.LabelSubCategory.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\WINDOWS\TEMP\tmp3F5.tmp.cadir\bin\App_Web_ujbuizog.dll">
+   <Modules>
+    <Module Name="app_web_ujbuizog.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="Category" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ButtonSubmit_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2025-05-09 05:18:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="Category.aspx.cs" Line="49">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Category.ButtonSubmit_Click(object, EventArgs)' could contain the following variables 'new string[7][1]', 'this.TextBox1.Text', 'this.TextBox2.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="newcat" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ButtonSubmit_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2025-05-09 05:18:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="newcat.aspx.cs" Line="48">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'newcat.ButtonSubmit_Click(object, EventArgs)' could contain the following variables 'this.TextBox1.Text', 'this.TextBox2.Text', 'this.Session["cid"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2025-05-09 05:18:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="newcat.aspx.cs" Line="26">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'newcat.Page_Load(object, EventArgs)' could contain the following variables 'this.Session["cid"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ProductDetails" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2025-05-09 05:18:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="ProductDetails.aspx.cs" Line="37">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'ProductDetails.Page_Load(object, EventArgs)' could contain the following variables 'this.Request.QueryString["Pid"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="showcat" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2025-05-09 05:18:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="showcat.aspx.cs" Line="35">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'showcat.Page_Load(object, EventArgs)' could contain the following variables 'this.Request.QueryString["category"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UserCart" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2025-05-09 05:18:32Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="c:\workspace\S343_E-Commerce Website for Visually Impaired\E-Commerce Website for Visually Challenged\Project\Project" File="UserCart.aspx.cs" Line="36">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'UserCart.Page_Load(object, EventArgs)' could contain the following variables 'this.Request.QueryString["uid"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>Do not dispose objects multiple times</Name>
+   <Description>A correctly implemented Dispose method can be called multiple times without throwing an exception. However, this is not guaranteed and to avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.</Description>
+   <Resolution Name="Default">Object {0} can be disposed more than once in method {1}. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 105</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>Review SQL queries for security vulnerabilities</Name>
+   <Description>A SQL command string built from user input is vulnerable to SQL injection attacks. Microsoft SQL Server and other database servers support stored procedures and parameterized SQL queries, which reduce the risk of injection attacks.</Description>
+   <Resolution Name="WithNonLiterals">The query string passed to {0} in {1} could contain the following variables {2}. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="17.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>
